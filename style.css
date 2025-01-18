@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.danfo-fonts {
+  font-family: "poppins";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.display-flex{
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+.text-gray{
+    color: rgba(58, 58, 58, 1);
+}
+.header{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.img-container{
+    background-image: url(/influencer-gear-main/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 475px;
+    height: auto;
+    margin-top: 50px;
+}
+.container{
+    gap: 350px;
+}
+.custom-button {
+    background-color: #e91e63;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.custom-button i {
+    font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin: 10px 0;
+        gap: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .img-container {
+        margin: 30px auto 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-link {
+        gap: 15px;
+        padding: 0;
+    }
+
+    .custom-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin-left: 30px;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+        margin-left: 50px;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+        margin-left: 50px;
+    }
+   
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse; 
+        align-items: center;
+        gap: 50px;
+        margin: 0 auto;
+    }
+    
+}
